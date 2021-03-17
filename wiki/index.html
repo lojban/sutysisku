@@ -32,7 +32,7 @@
         for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
           language = nav[browserLanguagePropertyKeys[i]]
           if (language && language.length) {
-            return language
+            return language.replace(/-.*/,'')
           }
         }
 
